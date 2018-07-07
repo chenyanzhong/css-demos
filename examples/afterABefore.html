@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>After A Before Demo</title>
+    <style type="text/css">
+        #div1 {
+            color: black;
+            font-size: 30px;
+        }
+
+        #div1::before {
+            content: attr(data-text);
+            color: red;
+        }
+
+        #div2 {
+            font-size: 30px;
+        }
+
+        #div2::after {
+            content: attr(data-text);
+            font-size: 10px;
+            color: red;
+        }
+
+        #div3 {
+            position: relative;
+            color: gray;
+            font-size: 30px;
+        }
+
+        #div3::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: purple;
+            width: 120px;
+            white-space: nowrap;
+            overflow: hidden;
+
+            animation-name: anim;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes anim {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 120px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <div id="div1" data-text="$">8888</div>
+        <div id="div2" data-text="元">9999</div>
+        <div id="div3" data-text="9999!!!">9999!!!</div>
+    </div>
+</body>
+
+</html>
