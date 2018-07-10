@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Backgroud Demo</title>
+    <style type="text/css">
+        div {
+            margin: 20px;
+            width: 200px;
+            height: 120px;
+            float: left;
+            box-sizing: border-box;
+            border: 1px solid gray;
+        }
+
+        #bg1 {
+            background-color: white;
+            border-radius: 10px;
+            border: 5px solid peachpuff;
+            outline: 5px solid deeppink;
+        }
+
+        #bg2 {
+            background: linear-gradient(white 20%, peachpuff 80%);
+        }
+
+        #bg3 {
+            background: linear-gradient(white 50%, gray 50%);
+        }
+
+        #bg4 {
+            background: linear-gradient(white 50%, peachpuff 50%);
+            background-size: 100% 30px;
+        }
+
+        #bg5 {
+            background: linear-gradient(white 30%, pink 0);
+            background-size: 100% 30px;
+        }
+
+        #bg6 {
+            background: linear-gradient(white 33.3%, #58a 0, #58a 66.6%, yellowgreen 0);
+            background-size: 100% 40px;
+        }
+
+        #bg7 {
+            background: linear-gradient(to right, #58a 33.3%, white 0, white 66.6%, yellowgreen 0);
+        }
+
+        #bg8 {
+            background: linear-gradient(45deg, #58a 33.3%, white 0, white 66.6%, yellowgreen 0);
+        }
+
+        #bg9 {
+            height: 120px;
+            width: 120px;
+            background: radial-gradient(yellowgreen 30%, transparent 0, transparent 50%, peachpuff 0);
+        }
+
+        #bg10 {
+            box-sizing: border-box;
+            outline: 1px solid gray;
+            border: 0 solid gray;
+            border-left: 40px solid white;
+            border-right: 40px solid white;
+            height: 120px;
+            background: radial-gradient(red 30%, white 0);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="bg1"></div>
+    <div id="bg2"></div>
+    <div id="bg3"></div>
+    <div id="bg4"></div>
+    <div id="bg5"></div>
+    <div id="bg6"></div>
+    <div id="bg7"></div>
+    <div id="bg8"></div>
+    <div id="bg9"></div>
+    <div id="bg10"></div>
+</body>
+
+</html>
