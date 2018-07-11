@@ -7,7 +7,7 @@ border 相关布局
 flex 兼容
 float 清楚浮动
 background 背景
-伪类的使用
+::after ::before 伪类的使用
 ```
 
 #### 2 布局相关
